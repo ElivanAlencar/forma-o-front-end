@@ -1,11 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <h2>formulário HTML</h2>
+    <!-- primeiro formulário -->
+    <!-- atributos formulário -->
+    <div>
+        <form action="register.php" method="post">
+            <label for="">nome:</label>
+            <input type="text">
+    </div>
+
+    <!-- atributos formulário -->
+    <div>
+        <label for="age">idade:</label>
+        <input type="text" name="age">
+    </div>
+
+        <!-- selecionar  -->
+    <div>
+        <label for="job">selecione a sua profissão</label>
+        <select name="job">
+            <option value="programador">programador</option>
+            <option value="front-end">front end</option>
+            <option value="tester">tester-QA</option>
+        </select>
+    </div>
+
+    <!-- atributo seletecd -->
+     <div>
+        <label for="contrato"> você leu os termos do seu contrato?</label>
+        <select name="contrato">
+            <option value="sim">Sim</option>
+            <option value="não" selected>não</option>
+        </select>
+
+     </div>
+
+    <!-- enkvikar dados do formulário -->
+    <input type="submit" value="enviar">
+    </form>
+
 </body>
+
 </html>
