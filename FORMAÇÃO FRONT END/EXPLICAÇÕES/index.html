@@ -24,7 +24,7 @@
         <input type="text" name="age">
     </div>
 
-        <!-- selecionar  -->
+    <!-- selecionar  -->
     <div>
         <label for="job">selecione a sua profissão:</label>
         <select name="job">
@@ -35,15 +35,15 @@
     </div>
 
     <!-- atributo seletecd -->
-     <div>
+    <div>
         <label for="contrato"> você leu os termos do seu contrato?</label>
         <select name="contrato">
             <option value="sim">Sim</option>
             <option value="não" selected>não</option>
         </select>
-     </div>
+    </div>
 
-     <div>
+    <div>
         <label for="items">selecione seu itens desejados:</label>
         <select name="items">
             <option value="pera">pera</option>
@@ -51,18 +51,34 @@
             <option value="feijao">feijao</option>
             <option value="milho">milho</option>
         </select>
-     </div>
-     <!-- usando textarea -->
-     <div>
+    </div>
+    <!-- usando textarea -->
+    <div>
         <label for="textarea">oque voce achou do curso</label>
         <textarea name="textarea"></textarea>
-     </div>
+    </div>
 
-     <div>
+    <div>
         <fieldset>
             <legend>formulário de HTML</legend>
         </fieldset>
-     </div>
+    </div>
+
+    <div>
+        <label for="sabor">escolha seu sabor</label>
+        <input type="text" list="sabores" name="sabor">
+
+        <datalist id="sabores">
+            <option value="cereja">cereja</option>
+            <option value="morankgo">morankgo</option>
+            <option value="abacaxi">abacaxi</option>
+        </datalist>
+    </div>
+
+    <div>
+        <label for="reset"></label>
+        <input type="reset" value="limpar" name="reset">
+    </div>
 
     <!-- envikar dados do formulário -->
     <input type="submit" value="enviar">
