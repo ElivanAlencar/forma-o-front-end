@@ -110,3 +110,28 @@ span {
     text-decoration: none;
     color:#3897f0;
 }
+
+.get-app {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.get-app p{
+  margin: 25px;
+}
+
+.img-get-app img{
+
+  width: 136px;
+}
+
+
+/* responsivo */
+
+@media (max-width: 450px){
+  .banner{
+    display: none;
+  }
+
+}
