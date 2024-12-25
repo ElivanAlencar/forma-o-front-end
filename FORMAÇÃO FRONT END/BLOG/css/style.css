@@ -70,6 +70,28 @@ li {
 
 .post {
   margin-bottom: 2.5rem;
+
+}
+
+.post h3 {
+  margin: 20px 0 10px 0;
+  font-size: 30px;
+  
+}
+
+.post-pf {
+  margin: 20px 0 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.post a:hover {
+  color:#37a1f7;
+
+}
+
+.post h3::first-letter {
+  text-transform: uppercase;
 }
 
 .post img {
