@@ -200,3 +200,24 @@ footer {
 footer h3::first-letter{
   text-transform: uppercase;
 }
+
+
+/* reponsividade */
+
+@media screen and ( max-width: 450px) {
+  .container {
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-bar__menu {
+    width: 100%;
+    padding: 0 20px 0 20px;
+  }
+
+  footer {
+    width: 100%
+  }
+  
+}
