@@ -62,14 +62,14 @@
 
 const M = 10
 
-if(M > 5) {
+if (M > 5) {
     console.log("M é maior que 5! ");
 }
 
 
 const user = "joão";
 
-if(user === "joão") {
+if (user === "joão") {
     console.log("joão");
 }
 
@@ -78,7 +78,7 @@ if(user === "joão") {
 
 const loggedIn = false;
 
-if(loggedIn) {
+if (loggedIn) {
     console.log("está autenticado!")
 } else {
     console.log("não está autenticado");
@@ -87,7 +87,7 @@ if(loggedIn) {
 const q = 10;
 const w = 20;
 
-if(q > 5, w > 20){
+if (q > 5, w > 20) {
     console.log("número maior que 5 e 20");
 } else {
     console.log("número menor que 5 e 20");
@@ -96,22 +96,22 @@ if(q > 5, w > 20){
 
 //  else if
 
-if( 1 > 2) {
+if (1 > 2) {
     console.log("teste");
 
-} else if( 2 > 3) {
+} else if (2 > 3) {
     console.log("teste2");
 
-} else if( 10 > 9) {
+} else if (10 > 9) {
     console.log("agotra sim!");
 }
 
 const userName = "elivan";
 const userAge = 36;
 
-if(userName === "joão") {
+if (userName === "joão") {
     console.log("bem vindo joão")
-} else if(userName === "elivan" && userAge === 36) {
+} else if (userName === "elivan" && userAge === 36) {
     console.log("ola elivan você tem 36 anos");
 } else {
     console.log("nenhuma condição aceita!");
@@ -125,7 +125,7 @@ if(userName === "joão") {
 
 let p = 0;
 
-while(p < 11) {
+while (p < 11) {
     console.log(`repetindo ${p}`);
     p = p + 1;
 }
@@ -144,4 +144,47 @@ do {
 
 for (let t = 0; t < 10; t++) {
     console.log("repetindo algo...");
+};
+
+// break
+
+for (let g = 20; g > 10; g--) {
+    console.log(`o valor de g é: ${g}`);
+
+    if (g === 15) {
+        console.log("o g é 15!");
+        break;
+    }
+}
+
+// continue
+
+for (let s = 0; s < 10; s = s + 1) {
+    // operador resto = %
+    if (s % 2 === 0) {
+        console.log("número par!");
+        continue;
+    };
+
+    console.log(s);
+}
+
+// switch
+
+const job = "advogado";
+
+switch (job) {
+    case "programador":
+        console.log("você é um programador");
+        break;
+
+    case "analsita":
+        console.log("você é um analista");
+        break;
+
+    case "advogado":
+        console.log("advogado");
+        break;
+    default:
+        console.log("nenhuma opção aceita!");
 }
