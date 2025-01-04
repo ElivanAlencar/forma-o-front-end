@@ -1,0 +1,150 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: arial, sans-serif, helvetica;
+}
+
+body {
+    background-color: #f0ebf8;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: #333;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="file"],
+textarea {
+    width: 400px;
+
+}
+
+p,
+label {
+    color: #444;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+input:focus {
+    border-bottom: 1px solid #673ab7;
+    outline: none;
+}
+
+
+.header {
+    height: 160px;
+    padding: 20px;
+    background-color: #673ab7;
+    width: 100vh;
+    margin: 0 auto;
+}
+
+.header h3{
+    color:white;
+}
+
+.form-container {
+    background-color: #fdfdfd;
+    width: 100vh;
+    margin: 0 auto;
+    position: relative;
+    margin-top: -65px;
+}
+
+textarea{
+    padding: 10px 5px;
+}
+
+/* form header */
+.form-header{
+    border: 1px solid #ccc;
+    height: 50px;
+}
+
+.form-header p{
+    font-weight: 600;
+    color:#673ab7;
+    text-transform: uppercase;
+    border-bottom: 2px solid  #673ab7;
+    width: 100px;
+    height: 50px;
+    line-height: 60px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+/* form body */
+.form-body{
+    padding: 30px;
+}
+
+.form-title{
+    margin-bottom: 15px;
+}
+
+.form-body p{
+    margin-bottom: 20px;
+}
+
+.required-field{
+    color: red;
+}
+
+.box-input{
+    margin-bottom: 35px;
+}
+
+.block{
+    display: block;
+}
+
+.optional-box{
+    display: inline-block;
+    margin: 0 30px 30px 0;
+}
+
+.optional-list li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.box-input p{
+    margin-bottom: 20px;
+}
+
+.input-enviar{
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.btn-submit{
+    background-color: #673ab7;
+    color:white;
+    border: 2px solid transparent;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.5s;
+    margin-left: 15px;
+}
+
+.btn-submit:hover{
+    background-color: white;
+    border: 2px solid #673ab7;
+    color: black;
+
+}

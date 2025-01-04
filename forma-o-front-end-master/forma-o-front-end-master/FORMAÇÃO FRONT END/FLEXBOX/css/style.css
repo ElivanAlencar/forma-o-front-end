@@ -1,0 +1,44 @@
+
+
+/* wrap */
+
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.box{
+    margin: 10px 0;
+    height: 40px;
+    width: 33%;
+    border: 1px solid red;
+}
+
+/* justify content */
+
+.center{
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+    
+}
+
+.center .box{
+    width: 50px;
+    
+}
+
+.gap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid green; 
+}
+
+.box{
+    width: 32%;
+    
+}
+
+

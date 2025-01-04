@@ -1,0 +1,28 @@
+body{
+    background-color: red;
+}
+
+@media screen and (max-width: 500px){
+    h1 {
+        background-color: blue;
+    }
+}
+
+@media screen and (min-width: 800px){
+    p{
+        background-color: blue;
+        color: yellow;
+        padding: 50px;
+    }
+}
+
+    /* visivel no landscape */
+h3{
+    display: none;
+}
+
+@media screen and (orientation: landscape){
+    h3{
+        display: block;
+    }
+}

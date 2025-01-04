@@ -1,0 +1,136 @@
+/* geral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: helvetica;
+}
+
+
+.img-celular{
+    width: 400px;
+}
+.banner .form-container{
+    flex: 1 1 0;
+    width: 50%;
+}
+.main-container {
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-insta {
+  margin: 25px 0;
+}
+
+.form-container {
+  background-color: #fff;
+  width: 350px;
+  
+}
+
+.form-box {
+  text-align: center;
+  border: 1px solid #dbdbdb;
+}
+
+.img-inst-logo {
+  margin-top: 20px;
+  width: 175px;
+  height: 51px;
+}
+
+.form-box input {
+  display: inline-block;
+  width: 268px;
+  font-size: 12px;
+  padding: 12px;
+  margin: 12px;
+  outline: none;
+  background-color: #fafafa;
+  border: 1px solid #dbdbdb;
+}
+
+.form-box input[type="submit"] {
+  background-color: #3897f0;
+  opacity: 0.8;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.line {
+  margin: 20px 0;
+  border: 1px solid #dbdbdb;
+  position: relative;
+}
+
+span {
+  background-color: #fff;
+  padding: 0 10px;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.img-facebook {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2366a5;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.img-face {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}
+
+.pass {
+  margin: 25px 10px 15px 10px;
+  color: #3897f0;
+  font-size: 12px;
+}
+
+.cadastro{
+    margin-top: 16px;
+    padding: 25px;
+    border: 1px solid #dbdbdb;
+    height: 80px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.cadastro a{
+    text-decoration: none;
+    color:#3897f0;
+}
+
+.get-app {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.get-app p{
+  margin: 25px;
+}
+
+.img-get-app img{
+
+  width: 136px;
+}
+
+
+/* responsivo */
+
+@media (max-width: 450px){
+  .banner{
+    display: none;
+  }
+}

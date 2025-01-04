@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- estilo -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- icones -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="contaniner">
+      <!-- menu de navegação -->
+      <header>
+        <nav class="nav-bar">
+          <a class="img">
+            <img src="img/hdchostlogo.png" alt="hdc host" class="img-imagem" />
+          </a>
+          <ul class="list">
+            <li class="list-menu"><a href="">home</a></li>
+            <li class="list-menu"><a href="">preços</a></li>
+            <li class="list-menu"><a href="">contato</a></li>
+            <li class="list-menu" id="list-entrar"><a href="">entrar</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+    <!-- banner -->
+    <div class="banner">
+      <h1 class="banner-h1">hdc host</h1>
+      <p>os melhores serviços para projetos de todos os tamanhos!</p>
+    </div>
+
+    <!-- suporte do plano -->
+    <div class="section">
+      <article class="section-article">
+        <i class="fas fa-shield-alt"></i>
+        <p class="iconis">segurança</p>
+        <p class="article-item">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi,
+          voluptatum? Sed accusantium reprehenderit corporis minima impedit,
+          assumenda placeat nostrum dicta, expedita laborum tempora! Sequi,
+          dolore.
+        </p>
+      </article>
+
+      <article class="section-article">
+        <i class="fas fa-rocket"></i>
+        <p class="iconis">desempenho</p>
+        <p class="article-item">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi,
+          voluptatum? Sed accusantium reprehenderit corporis minima impedit,
+          assumenda placeat nostrum dicta, expedita laborum tempora! Sequi,
+          dolore.
+        </p>
+      </article>
+
+      <article class="section-article">
+        <i class="fas fa-comments"></i>
+        <p class="iconis">suporte 24/7</p>
+        <p class="article-item">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi,
+          voluptatum? Sed accusantium reprehenderit corporis minima impedit,
+          assumenda placeat nostrum dicta, expedita laborum tempora! Sequi,
+          dolore.
+        </p>
+      </article>
+    </div>
+
+    <!-- planos e preços -->
+    <section class="plano-preco">
+      <h3>planos e preços</h3>
+      <p>selecione o plano que atende ás suas necessidades</p>
+    </section>
+
+    <!-- planos e preçõs de cada plano -->
+    <section class="planer-list">
+      <div class="plane-basic">
+        <ul>
+          <li class="monthly-price">R$15/mês</li>
+          <li class="sub-monthly">básico</li>
+          <li>2GB de espaço</li>
+          <li>1 subdomínios</li>
+          <li>25 contos de e-mail</li>
+          <li>C-panel</li>
+          <li>suporte 24/7</li>
+          <li></li>
+          <li class="monthly-basic"><a href="">saber mais</a></li>
+        </ul>
+      </div>
+
+      <div class="plane-basic">
+        <ul>
+          <li class="monthly-price">R$30/mês</li>
+          <li class="sub-monthly">dedicado</li>
+          <li>5GB de espaço</li>
+          <li>10 subdomínios</li>
+          <li>50 contos de e-mail</li>
+          <li>C-panel</li>
+          <li>suporte 24/7</li>
+          <li></li>
+          <li class="monthly-basic"><a href="">saber mais</a></li>
+        </ul>
+      </div>
+
+      <div class="plane-basic">
+        <ul>
+          <li class="monthly-price-plus">R$50/mês</li>
+          <li class="sub-monthly">dedicado plus</li>
+          <li>10GB de espaço</li>
+          <li>10 subdomínios</li>
+          <li>100 contos de e-mail</li>
+          <li>C-panel</li>
+          <li>suporte 24/7</li>
+          <li></li>
+          <li class="monthly-basic-plus"><a href="">saber mais</a></li>
+        </ul>
+      </div>
+
+      <div class="plane-basic">
+        <ul>
+          <li class="monthly-price">R$100/mês</li>
+          <li class="sub-monthly">cloud</li>
+          <li>20GB de espaço</li>
+          <li>20 subdomínios</li>
+          <li>200 contos de e-mail</li>
+          <li>C-panel</li>
+          <li>suporte 24/7</li>
+          <li></li>
+          <li class="monthly-basic"><a href="">saber mais</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- escolha de domínio -->
+    <form action="" class="inputs">
+      <h3>qual domínio você quer para o seu site?</h3>
+      <p>verifique se o domínio está disponivel</p>
+
+      <label for="input-dominio"></label>
+      <input
+        type="text"
+        name="input-dominio"
+        placeholder="Digite o domínio desejado"
+        class="input-1"
+      />
+      <input type="submit" value="procurando dominio" class="btn-2" />
+    </form>
+
+    <!-- messgem do cliente -->
+    <div class="container">
+      <h3>Mande uma mensagem</h3>
+      <p>
+        Envie a sua mensagem, em até 4 horas um especialista entrará em contato
+      </p>
+
+      <form action="" class="inputs-2">
+        <input type="text" name="name" id="name" placeholder="seu nome" />
+        <input type="email" name="email" id="email" placeholder="seu e-mail" />
+        <textarea
+          name="message"
+          id="message"
+          placeholder="Descreva o que você precisa ou o seu projeto"
+        ></textarea>
+
+        <input type="submit" value="Enviar" class="btn-3" />
+      </form>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <p>hDC Host @ 2024</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>formulário HTML</h2>
+    <!-- primeiro formulário -->
+    <!-- atributos formulário -->
+    <div>
+        <form action="register.php" method="post">
+            <label for="">nome:</label>
+            <input type="text">
+    </div>
+
+    <!-- atributos formulário -->
+    <div>
+        <label for="age">idade:</label>
+        <input type="text" name="age">
+    </div>
+
+    <!-- selecionar  -->
+    <div>
+        <label for="job">selecione a sua profissão:</label>
+        <select name="job">
+            <option value="programador">programador</option>
+            <option value="front-end">front end</option>
+            <option value="tester">tester-QA</option>
+        </select>
+    </div>
+
+    <!-- atributo seletecd -->
+    <div>
+        <label for="contrato"> você leu os termos do seu contrato?</label>
+        <select name="contrato">
+            <option value="sim">Sim</option>
+            <option value="não" selected>não</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="items">selecione seu itens desejados:</label>
+        <select name="items">
+            <option value="pera">pera</option>
+            <option value="arroz">arroz</option>
+            <option value="feijao">feijao</option>
+            <option value="milho">milho</option>
+        </select>
+    </div>
+    <!-- usando textarea -->
+    <div>
+        <label for="textarea">oque voce achou do curso</label>
+        <textarea name="textarea"></textarea>
+    </div>
+
+    <div>
+        <fieldset>
+            <legend>formulário de HTML</legend>
+        </fieldset>
+    </div>
+
+    <div>
+        <label for="sabor">escolha seu sabor</label>
+        <input type="text" list="sabores" name="sabor">
+
+        <datalist id="sabores">
+            <option value="cereja">cereja</option>
+            <option value="morankgo">morankgo</option>
+            <option value="abacaxi">abacaxi</option>
+        </datalist>
+    </div>
+
+    <div>
+        <label for="reset"></label>
+        <input type="reset" value="limpar" name="reset">
+    </div>
+
+    <!-- envikar dados do formulário -->
+    <input type="submit" value="enviar">
+    </form>
+
+</body>
+
+</html>
