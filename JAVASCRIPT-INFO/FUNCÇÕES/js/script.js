@@ -115,3 +115,6 @@ console.log(raizQuadrada(5));
 console.log(raizQuadrada(12));
 
 
+// alteração no function
+
+
