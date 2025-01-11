@@ -263,3 +263,72 @@ const somaInfinita = (...args) => {
 console.log(somaInfinita(1, 2, 3));
 
 console.log(somaInfinita(10, 10, 10, 20));
+
+
+// for of
+
+const somaInfinite2 = (...args) => {
+  let total = 0;
+
+  for (num of args) {
+    total += num;
+  }
+
+  return total;
+};
+
+console.log(somaInfinite2(1, 2, 2,));
+
+console.log(somaInfinite2(5, 10, 8, 9, 23));
+
+// destructuring em objetos
+
+const userDetails = {
+  firstName: "Elivan",
+  lastName: "Alencar,",
+  job: "aprendiz de programador",
+};
+
+const { firstName, lastName, job} = userDetails;
+
+console.log(firstName, lastName, job);
+
+
+// renomear variavel
+
+const { firstName: primeiroNome } = userDetails;
+
+console.log(firstName);
+
+// destructuring em arrays
+const myList = ["avião", "submarino", "carro"];
+
+const [veiculoA, veiculoB, veiculoC] = myList;
+
+console.log(veiculoA, veiculoB, veiculoC);
+
+//  json - javaScript Object Notation 
+
+const myJson = '{"name": "elivan", "age": 31, "skills": ["PHP", "javaScript", "python"]}';
+
+console.log(myJson);
+
+
+/* json para objeto e objetos Json
+na maioria das vezes vamos precisar converter objetos para json;
+ou json para um objeto javaScript válido;
+utilizando o objeto json e os métodos Stringify e parse; */
+
+// json para objeto e objetos Json
+
+const myObject = JSON.parse(myJson);
+
+console.log(myObject);
+
+
+
+const myNewJson =  JSON.stringify(myObject);
+
+console.log(myNewJson);
+
+console.log(typeof myNewJson);
