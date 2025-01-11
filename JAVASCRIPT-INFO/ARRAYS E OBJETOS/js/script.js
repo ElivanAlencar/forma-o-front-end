@@ -2,18 +2,16 @@
 
 // arrays
 
-const lista = [0, 1, 2, 3, 4,];
+const lista = [0, 1, 2, 3, 4];
 
 console.log(lista);
 
-
 // acessando elementos do array. arrays dentro de arrays
 
-const itens = [0, 1, 2, 3, 4,[]];
+const itens = [0, 1, 2, 3, 4, []];
 console.log(itens);
 
-
-// propriedades. 
+// propriedades.
 
 // length mostra quantos elementos tem no array
 
@@ -21,13 +19,11 @@ const numbers = [4, 5, 7];
 
 console.log(numbers.length);
 
-
 // mostra quantos caracteres tem em uma string
 
 const myName = "Elivan";
 
 console.log(myName.length);
-
 
 // acessando elementos do array
 
@@ -37,7 +33,7 @@ console.log(arr[3]);
 
 console.log([4]);
 
-// métodos 
+// métodos
 
 const otherNumbers = [1, 2, 3];
 
@@ -48,9 +44,9 @@ console.log(allNumber);
 // objetos
 
 const person = {
-    name: "elivan",
-    age: 36,
-    job: "programador",
+  name: "elivan",
+  age: 36,
+  job: "programador",
 };
 
 console.log(person);
@@ -59,15 +55,13 @@ console.log(person.age);
 
 console.log(person.name.length);
 
-
-
 // criando e deletando propriedades
 
 const car = {
-    engine: 2.0,
-    brand: "vw",
-    model: "tiguan",
-    km: 20000,
+  engine: 2.0,
+  brand: "vw",
+  model: "tiguan",
+  km: 20000,
 };
 
 console.log(car);
@@ -82,16 +76,15 @@ console.log(car);
 delete car.km;
 console.log(car);
 
-
 //  objeto copiando objetos
 
 const obj = {
-    a: "teste",
-    b: "carro",
+  a: "teste",
+  b: "carro",
 };
 
 const obj2 = {
-    c: [],
+  c: [],
 };
 
 Object.assign(obj2, obj);
@@ -104,26 +97,23 @@ console.log(Object.keys(obj));
 console.log(Object.keys(obj2));
 console.log(Object.keys(car));
 
-
 //  loop em array
 
-const users = ["elivan", "pedro", "josé", "lucas", "janos"]
+const users = ["elivan", "pedro", "josé", "lucas", "janos"];
 
 for (let i = 0; i < users.length; i++) {
-    console.log(`listando o usuário: ${users[i]}`);
+  console.log(`listando o usuário: ${users[i]}`);
 }
-
 
 //  push e pop / adicinar e remover do final da lista;
 
-const array = ["a", "b", "c"]
+const array = ["a", "b", "c"];
 
 array.push("f");
 console.log(array);
 
 array.pop();
 console.log(array);
-
 
 // shitf e unshift / adicinar e remover no inicio da lista
 
@@ -134,9 +124,142 @@ const letter = letters.shift();
 console.log(letters);
 console.log(letter);
 
-
 letters.unshift("k", "g", "f");
 
 letters.unshift("h");
 console.log(letters);
 
+// indexOf e lastIndexOf
+
+const myElements = ["morango", "maçã", "abacate", "pêra", "abacate"];
+
+console.log(myElements.indexOf("abacate"));
+
+console.log(myElements[2]);
+console.log(myElements[myElements.indexOf("abacate")]);
+
+console.log(myElements.lastIndexOf("abacate"));
+
+// slice
+
+const testeSlice = ["a", "b", "c", "d", "e", "f"];
+
+const subArray = testeSlice.slice(2, 4);
+
+console.log(subArray);
+console.log(testeSlice);
+
+const subArray2 = testeSlice.slice(2, 4 + 1);
+
+console.log(subArray2);
+
+// retorna uma lista vazia
+
+const subArray3 = testeSlice.slice(10, 20);
+
+console.log(subArray3);
+
+// foreach
+
+const nums = [1, 2, 3, 4, 5];
+
+nums.forEach((numero) => {
+  console.log(`o número é ${numero}`);
+});
+
+const posts = [
+  { title: "primeiro post", category: "PHP" },
+  { title: "segundo post", category: "javascript" },
+  { title: "terceiro", category: "python" },
+];
+
+posts.forEach((post) => {
+  console.log(`exibindo post: ${post.title}, da categoria: ${post.category}`);
+});
+
+// includes
+
+const brands = ["BMW", "VW", "Fiat"];
+
+// mostra boleooan verdade ou falso
+console.log(brands.includes("Fiat"));
+console.log(brands.includes("KIA"));
+
+if (brands.includes("BMW")) {
+  console.log("Há uma carro da marca BMW");
+}
+
+// reverse | reverte a ordem do array
+
+const reverseTest = [1, 2, 3, 4, 5];
+reverseTest.reverse();
+
+console.log(reverseTest);
+
+// trim
+
+const trimTest = "  testando  \n ";
+
+console.log(trimTest);
+
+console.log(trimTest.trim());
+
+console.log(trimTest.length);
+
+console.log(trimTest.trim().length);
+
+// padstart
+
+const testePadStart = "1";
+
+const newNumber = testePadStart.padStart(4, "0");
+
+console.log(testePadStart);
+
+console.log(newNumber);
+
+const testePadEnd = newNumber.padEnd(10, "0");
+
+console.log(testePadEnd);
+
+// split
+
+const frase = "o rato roeu a roupa do rei de roma";
+
+const arrayFrase = frase.split(" ");
+console.log(arrayFrase);
+
+// join
+
+const fraseDenovo = arrayFrase.join(" ");
+
+console.log(fraseDenovo);
+
+const itemParaComprar = ["mouse", "teclado", "monitor"];
+
+const fraseDeCompra = `precisa comprar: ${itemParaComprar.join(", ")}.`;
+
+console.log(fraseDeCompra);
+
+// repeat
+
+const palavra = "testando ";
+
+console.log(palavra.repeat(5));
+
+// rest operator
+
+
+const somaInfinita = (...args) => {
+  let total = 0;
+
+  for (let i = 0; i < args.length; i++) {
+    total += args[i];
+  }
+
+  return total;
+};
+
+console.log(somaInfinita(1, 2, 3));
+
+console.log(somaInfinita(10, 10, 10, 20));
