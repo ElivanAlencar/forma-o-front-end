@@ -168,9 +168,45 @@ class post {
   get exibirTitulo() {
     return `voce esta lendo: ${this.titulo}`;
   }
+
+  set adicionarTags(tags) {
+    const tagsArray = tags.split(", ");
+    this.tags = tagsArray;
+  }
 }
 
 const myPost = new post("algum post", "É um post sobre programação");
 console.log(myPost);
 
 console.log(myPost.exibirTitulo);
+
+myPost.adicionarTags = "programção, javascritp, js";
+console.log(myPost);
+
+
+// herança
+
+class mamifero {
+  constructor(patas) {
+    this.patas = patas;
+  }
+}
+
+class lobo extends mamifero {
+  constructor(patas, nome) {
+    super(patas, patas);
+    this.nome = nome;
+  }
+}
+
+const shark = new lobo(4, "shark");
+console.log(shark);
+
+console.log(shark.patas);
+
+// instanceof
+
+console.log(shark instanceof mamifero);
+
+console.log(new lobo(4, "reste") instanceof mamifero);
+console.log(new post("a", "b") instanceof lobo);
