@@ -208,5 +208,5 @@ console.log(shark.patas);
 
 console.log(shark instanceof mamifero);
 
-console.log(new lobo(4, "reste") instanceof mamifero);
+console.log(new lobo(4, "teste") instanceof mamifero);
 console.log(new post("a", "b") instanceof lobo);
