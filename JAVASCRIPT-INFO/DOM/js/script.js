@@ -127,3 +127,9 @@ console.log(footer.clientHeight);
 const produtos1 = produtos[0];
 
 console.log(produtos1.getBoundingClientReact());
+
+
+
+// estilos com JS
+
+/* todo elemento pussui uma propriedade chamada Style */
