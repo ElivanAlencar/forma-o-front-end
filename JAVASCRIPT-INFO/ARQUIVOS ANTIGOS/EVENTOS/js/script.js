@@ -35,12 +35,12 @@ const containerBtn = document.querySelector("#btn-container");
 const btnInsideContainer = document.querySelector("#div-btn");
 
 containerBtn.addEventListener("click", () => {
-    console.log("evento 1");
+  console.log("evento 1");
 });
 
 btnInsideContainer.addEventListener("click", (e) => {
-    e.stopPropagation();
-    console.log("evento 2");
+  e.stopPropagation();
+  console.log("evento 2");
 });
 
 // removendo evento padrão
@@ -48,21 +48,20 @@ btnInsideContainer.addEventListener("click", (e) => {
 const a = document.querySelector("a");
 
 a.addEventListener("click", (e) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    console.log("não alterou apágina");
+  console.log("não alterou apágina");
 });
 
 // eventos de tecla
 
 document.addEventListener("keyup", (e) => {
-    console.log(`soltou a telca ${e.key}`);
+  console.log(`soltou a telca ${e.key}`);
 });
 
-
 document.addEventListener("keydown", (e) => {
-    console.log(`apertou a telca ${e.key}`);
-})
+  console.log(`apertou a telca ${e.key}`);
+});
 
 // eventos de mouse
 
@@ -87,20 +86,15 @@ document.addEventListener("mousemove", (e) => {
   // console.log(`no eixo y: ${e.y}`)
 });
 
-
 // evento de scroll
 
 window.addEventListener("scroll", (e) => {
   if (window.pageYOffset > 200) {
-    console.log("passamos de 200px")
+    console.log("passamos de 200px");
   }
 });
 
-const input = document.querySelector("#my-input")
-  input.addEventListener("focus", (e) => {
-    console.log("entrou no input");
-  })
-
-
-
-
+const input = document.querySelector("#my-input");
+input.addEventListener("focus", (e) => {
+  console.log("entrou no input");
+});
